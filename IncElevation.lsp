@@ -32,8 +32,8 @@
 ;;  content of these objects will be automatically incremented by the   ;;
 ;;  given increment value as the object is arrayed.                     ;;
 
-(defun c:incElevation  nil (LM:incarray nil)) ;; Standard version
-(defun c:incarrayd nil (LM:incarray  t )) ;; Dynamic  version
+(defun c:IE nil (LM:incarray nil)) ;; Increments spot elevation 
+(defun c:MC nil (LM:incarray  t )) ;; Multi copy slope blocks
 
 ;;----------------------------------------------------------------------;;
 
@@ -299,6 +299,7 @@
 ;;----------------------------------------------------------------------;;
 
 (vl-load-com)
+
 (princ)
 
 ;;----------------------------------------------------------------------;;
